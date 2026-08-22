@@ -1,6 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SR Seven Star Food Delivery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:black;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#000;
+    border-bottom:2px solid orange;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+}
+
+.brand img{
+    width:55px;
+    margin-right:10px;
+}
+
+.brand-text h1{
+    font-size:20px;
+    color:red;
+}
+
+.brand-text span{
+    font-size:12px;
+    color:orange;
+}
+
+.nav-links a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+}
+
+.nav-links a:hover{
+    color:orange;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,black,red,orange);
+}
+
+.hero img{
+    width:200px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    border:1px solid orange;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* FORM */
+form input{
+    width:260px;
+    padding:10px;
+    margin:6px;
+    border:none;
+    border-radius:5px;
+}
+
+form button{
+    padding:12px 25px;
+    background:orange;
+    border:none;
+    color:black;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+form button:hover{
+    background:red;
+    color:white;
+}
+
+/* CONTACT */
+.contact a{
+    color:orange;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    color:white;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="brand">
-        <img src="logo.png" alt="logo">
+        <img src="logo.png">
         <div class="brand-text">
             <h1>SR Seven Star</h1>
             <span>Food Delivery</span>
@@ -15,54 +164,98 @@
         <a href="#contact">Contact</a>
     </div>
 </nav>
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(0,0,0,0.9);
-    border-bottom: 2px solid orange;
-}
 
-/* Brand Combo */
-.brand {
-    display: flex;
-    align-items: center;
-}
+<!-- HOME -->
+<section class="hero" id="home">
+    <img src="logo.png">
+    <h1>SR Seven Star Food Delivery</h1>
+    <p>Fast Delivery • Great Service • Happy Customers</p>
+    <h2 style="color:orange;">We Are Hiring Bike Riders & Car Drivers</h2>
+</section>
 
-.brand img {
-    width: 55px;
-    margin-right: 12px;
-}
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We provide delivery services in Qatar working with KFC, Snoonu & Keeta.</p>
+</section>
 
-.brand-text h1 {
-    font-size: 20px;
-    margin: 0;
-    color: red;
-}
+<!-- SERVICES -->
+<section class="section" id="services">
+    <h2>Our Services</h2>
 
-.brand-text span {
-    font-size: 12px;
-    color: orange;
-    letter-spacing: 1px;
-}
+    <div class="cards">
+        <div class="card"><h3>Food Delivery</h3><p>Fast service across Qatar</p></div>
+        <div class="card"><h3>Rider Supply</h3><p>Bike riders & drivers available</p></div>
+        <div class="card"><h3>Partnership</h3><p>KFC, Snoonu, Keeta</p></div>
+    </div>
+</section>
 
-/* Nav Links */
-.nav-links a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-}
+<!-- APPLY -->
+<section class="section" id="apply">
+    <h2>Apply Now</h2>
 
-.nav-links a:hover {
-    color: orange;
-}
-.brand img {
-    animation: zoomIn 1s ease;
-}
+    <div class="cards">
+        <div class="card"><h3>Attractive Earnings</h3><p>Monthly incentives & bonuses</p></div>
+        <div class="card"><h3>Long Term</h3><p>Contract opportunities</p></div>
+        <div class="card"><h3>Company Support</h3><p>Changing fee covered</p></div>
+    </div>
 
-@keyframes zoomIn {
-    from { transform: scale(0.5); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    <h3 style="margin-top:30px;">Requirements</h3>
+    <p>✔ Valid QID</p>
+    <p>✔ Driving License</p>
+    <p>✔ Istamara</p>
+    <p>✔ Food Handler Certificate</p>
+    <p>✔ 6 Months Secondment Paper</p>
+    <p style="color:orange;">Office Fee: 200 QR</p>
+
+    <form>
+        <input id="name" placeholder="Full Name"><br>
+        <input id="qid" placeholder="QID"><br>
+        <input id="license" placeholder="License"><br>
+        <input id="vehicle" placeholder="Vehicle"><br>
+        <input id="phone" placeholder="Phone"><br>
+
+        <button type="button" onclick="sendToWhatsApp()">Apply Now</button>
+    </form>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>📞 71926515 / 71409020</p>
+    <p>📧 srsevenstar51@gmail.com</p>
+
+    <p>
+        📍 <a href="https://maps.app.goo.gl/65SoXYWpT6wLmrVn8" target="_blank">
+        View Location
+        </a>
+    </p>
+
+    <h3>Join Our Team & Grow With Us!</h3>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/97471926515" class="whatsapp">💬</a>
+
+<!-- SCRIPT -->
+<script>
+function sendToWhatsApp(){
+    var name=document.getElementById("name").value;
+    var qid=document.getElementById("qid").value;
+    var license=document.getElementById("license").value;
+    var vehicle=document.getElementById("vehicle").value;
+    var phone=document.getElementById("phone").value;
+
+    var msg="Job Application:%0A"
+    +"Name:"+name+"%0A"
+    +"QID:"+qid+"%0A"
+    +"License:"+license+"%0A"
+    +"Vehicle:"+vehicle+"%0A"
+    +"Phone:"+phone;
+
+    window.open("https://wa.me/97471926515?text="+msg);
 }
+</script>
+
+</body>
+</html>

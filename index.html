@@ -1,0 +1,68 @@
+<nav class="navbar">
+    <div class="brand">
+        <img src="logo.png" alt="logo">
+        <div class="brand-text">
+            <h1>SR Seven Star</h1>
+            <span>Food Delivery</span>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#apply">Apply</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.9);
+    border-bottom: 2px solid orange;
+}
+
+/* Brand Combo */
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 55px;
+    margin-right: 12px;
+}
+
+.brand-text h1 {
+    font-size: 20px;
+    margin: 0;
+    color: red;
+}
+
+.brand-text span {
+    font-size: 12px;
+    color: orange;
+    letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+.brand img {
+    animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
